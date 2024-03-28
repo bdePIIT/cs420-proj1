@@ -1,0 +1,58 @@
+nav {
+    background: rgb(223, 36, 195);
+    overflow: hidden;
+    z-index: 105;
+    position: fixed;
+    margin: 0;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.content {
+    padding-top: 80px;
+    position: relative;
+    width: calc(100% - 200px);
+    margin: 0;
+}
+
+.content > :not(aside) {
+    width: 95%; /* Make content fill the container */
+}
+
+aside {
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: -200px;
+    position: absolute;
+    right: 0;
+
+    z-index: 103;
+    width: 160px;
+    background-color: #dbe0eb; /* Black background color */
+}
+
+.blue {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.bold {
+    font-weight: bold;
+}
